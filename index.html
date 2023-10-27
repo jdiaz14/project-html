@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
     }
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #333; /* Fondo oscuro */
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      background-image: url('texture.png'); /* Ruta de la textura */
     }
     h1 {
       font-size: 28px;
-      color: #333;
+      color: #ff66b2; /* Color rosa */
       margin-bottom: 10px;
     }
     p {
       font-size: 16px;
-      color: #666;
       margin-bottom: 20px;
     }
     .image-container {
       display: flex;
       justify-content: space-between;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
     }
     .image {
       flex: 1;
       margin: 0 10px;
-      border: 1px solid #ccc;
-      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      border: 1px solid #ff3399; /* Rosa oscuro */
+      box-shadow: 0px 0px 5px rgba(255, 51, 153, 0.2);
       overflow: hidden;
       transition: transform 0.3s ease;
     }
@@ -47,24 +51,36 @@
     .image:hover {
       transform: scale(1.05);
     }
+    .video-container {
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
   </style>
-<title>EMANA app</title>
+  <title>EMANA floral - Tu Tienda de Flores</title>
 </head>
 <body>
   <div class="container">
-    <h1>EMANA floral</h1>
-    <p>Mi proyecto trata de crear una app android en donde se mostrarán catalogos de flores y se podrá hacer compra y envio de las mismas.</p>
+    <h1>Bienvenidos a EMANA floral</h1>
+    <p>Somos tu tienda de flores en línea. Aquí encontrarás una amplia variedad de hermosas flores frescas y arreglos florales que alegrarán tu día y el de tus seres queridos.</p>
     <div class="image-container">
       <div class="image">
-        <img src="img/1.png" alt="Imagen 1">
+        <img src="img/1.png" alt="Arreglo Floral">
       </div>
       <div class="image">
-        <img src="img/3.png" alt="Imagen 2">
+        <img src="img/3.png" alt="Rosas Rojas">
       </div>
       <div class="image">
-        <img src="img/4.png" alt="Imagen 3">
+        <img src"img/4.png" alt="Girasoles">
       </div>
     </div>
+  </div>
+  <p>Nuestro catálogo incluye una variedad de opciones, desde ramos de rosas rojas románticas hasta alegres girasoles. También ofrecemos arreglos florales personalizados para ocasiones especiales.</p>
+  <p>¡Haz tu pedido hoy y lleva la belleza de las flores a tu vida!</p>
+  <div class="video-container">
+    <video controls width="400">
+      <source src="tu_video.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
   </div>
 </body>
 </html>
